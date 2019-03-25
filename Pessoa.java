@@ -6,7 +6,7 @@
  * 
  */
 public class Pessoa {
-	private NomePessoa nome;
+	public NomePessoa nome;
 	private int idade;
 	private String rg;
 

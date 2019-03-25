@@ -7,7 +7,7 @@
  */
  public class Cadastro
  {
-    private Aluno cad[];
+    public Aluno cad[];
     
     Cadastro(int tam){
        cad = new Aluno[tam]; //tam = 5

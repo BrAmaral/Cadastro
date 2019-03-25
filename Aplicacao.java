@@ -13,7 +13,7 @@ public class Aplicacao
     
     public static void main(String args[]){
         String a, c, d;
-        int b=0, e=0, i;
+        int b=0, e=0, i, x = 0;
         
         //LerRa d = new LerRa();
         Cadastro cadAluno = new Cadastro(5);
@@ -21,12 +21,14 @@ public class Aplicacao
         IEntrada ent = new EntradaConsole();
         
         //ent.lerDados();
-        a = ent.lerNome();
+        cadAluno.cad[x].nome = ent.lerNome();
         b = ent.lerIdade();
         c = ent.lerRg();
         d = ent.lerRa();
         e = ent.lerSemestre();
         
+        
+
         for(i = 0; i < 5; i++){
             //alguma coisa = inserirAluno(cad[], i);
         }
