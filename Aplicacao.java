@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * Classe Aplicação guarda os dados de entrada em variaveis
  * 
@@ -7,32 +7,66 @@
  */
 public class Aplicacao
 {
+    
     //public Aplicacao(){
        // super();  
     //}
     
-    public static void main(String args[]){
-        String a, c, d;
-        int b=0, e=0, i, x = 0;
-        
-        //LerRa d = new LerRa();
+    /*public static void main(String args[]){
+        int opcao = 0;
+        Scanner sc = new Scanner(System.in);
         Cadastro cadAluno = new Cadastro(5);
         
-        IEntrada ent = new EntradaConsole();
-        
-        //ent.lerDados();
-        cadAluno.cad[x].nome = ent.lerNome();
-        b = ent.lerIdade();
-        c = ent.lerRg();
-        d = ent.lerRa();
-        e = ent.lerSemestre();
-        
-        
-
-        for(i = 0; i < 5; i++){
-            //alguma coisa = inserirAluno(cad[], i);
+        while(opcao > 4){
+            System.out.println("Forneça a Opçao");
+            System.out.println("1 - Inserir novo aluno");
+            System.out.println("2 - Remover alunos");
+            System.out.println("3 - Imprimir aluno");
+            System.out.println("4- Sair");
+            opcao = sc.nextInt();
         }
-        
-        //switch case com os metodos de cadastro
     }
+    
+    public static void menu(int op,Cadastro cadAluno){
+        int i = 0 ;
+        IEntrada ent = new EntradaConsole();
+        Aluno a1 = null;
+          
+            switch(op){
+                case 1 :
+                    a1 = cadAluno.colocar(a1);
+                    cadAluno.inserirAluno(a1); 
+                    break;
+                    
+                 case 2 :
+                    cadAluno.removerAlunos();
+                    break;
+                    
+                 case 3 :
+                   cadAluno.mostrarAluno();
+                    break;
+                    
+                 case 4 :
+                        System.exit(0);
+            }            
+    }    */
+    
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        Cadastro cadAluno = new Cadastro(5);
+        for(int i = 0; i < 5; i++){
+        IEntrada ent = new EntradaConsole();
+        Aluno a1 = null;
+        
+        a1 = cadAluno.colocar(a1);
+        cadAluno.inserirAluno(a1);
+        }
+        mostrarAluno();
+    }
+    
+    //public static void aplicacao(Cadastro cadAluno){
+    //    
+    //}
+    
+    
 }

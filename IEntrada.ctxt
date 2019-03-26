@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=IEntrada
-comment0.text=\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ interface\ IEntrada\ aqui.\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\n\ 21.03.2019\n
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ interface\ IEntrada\ aqui.\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\r\n\ 21.03.2019\r\n
 comment1.params=
 comment1.target=java.lang.String\ lerNome()
 comment2.params=

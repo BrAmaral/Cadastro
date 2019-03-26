@@ -1,8 +1,12 @@
 #BlueJ class context
 comment0.target=Cadastro
-comment0.text=\n\ A\ classe\ Cadastro\ utiliza\ os\ dados\ de\ Aluno\ para\ armazena-los\ em\ cadastro\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\n\ 22.03.2019\n
+comment0.text=\r\n\ A\ classe\ Cadastro\ utiliza\ os\ dados\ de\ Aluno\ para\ armazena-los\ em\ cadastro\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\r\n\ 22.03.2019\r\n
 comment1.params=tam
 comment1.target=Cadastro(int)
-comment2.params=cad\ num
-comment2.target=Aluno\ inserirAluno(Aluno[],\ int)
-numComments=3
+comment2.params=a
+comment2.target=void\ inserirAluno(Aluno)
+comment3.params=
+comment3.target=void\ mostrarAluno()
+comment4.params=a
+comment4.target=Aluno\ colocar(Aluno)
+numComments=5

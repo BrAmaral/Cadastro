@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=EntradaConsole
-comment0.text=\n\ Realiza\ a\ entrada\ via\ console\ pela\ biblioteca\ scanner\ de\ java,\ recebendo\ os\n\ valores\ de\ Nome,\ Idade,\ RG,\ RA\ e\ Semestre.\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\n
+comment0.text=\r\n\ Realiza\ a\ entrada\ via\ console\ pela\ biblioteca\ scanner\ de\ java,\ recebendo\ os\r\n\ valores\ de\ Nome,\ Idade,\ RG,\ RA\ e\ Semestre.\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
 comment1.params=
 comment1.target=java.lang.String\ lerNome()
 comment2.params=
