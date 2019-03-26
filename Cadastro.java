@@ -32,8 +32,16 @@
            }
        }
     }
+    
+    public void removerAlunos(){
+        int i = 0;
+        
+        for(i = 0; cad[i] != null; i++){   
+            cad[i] = null;
+        }
+    }
    
-    public void mostrarAluno(){
+    public void mostrarAlunos(){
         int i = 0;
         
         for(i = 0; cad[i] != null; i++){   
@@ -41,7 +49,7 @@
         }
     }    
     
-    public static Aluno colocar(Aluno a){
+    public Aluno colocar(Aluno a){
         IEntrada ent = new EntradaConsole();
         
         String nome = ent.lerNome();

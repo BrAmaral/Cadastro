@@ -35,4 +35,14 @@ public class EntradaConsole implements IEntrada
         System.out.print("Forneca o semestre do aluno:");
         return scan.nextInt();
     }
+    
+    public int lerOp(){
+        System.out.print("Opcao 1- Inserir\nOpcao 2- Mostrar lista\nOpcao 3- Remover alunos\nOpcao 4- Sair\n");
+        System.out.print("\nForneca a opcao: ");
+        return scan.nextInt();
+    }  
+    
+    public void alunosDemais(){
+        System.out.println("Impossível adicionar mais alunos");
+    }
 }

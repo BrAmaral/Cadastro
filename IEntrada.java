@@ -12,4 +12,6 @@ public interface IEntrada {
     public String lerRg(); // retorna o parametro RG
     public String lerRa(); // retorna o parametro RA
     public int lerSemestre(); //retorna o parametro semestre
+    public int lerOp();
+    
 }

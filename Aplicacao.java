@@ -8,65 +8,48 @@ import java.util.Scanner;
 public class Aplicacao
 {
     
-    //public Aplicacao(){
-       // super();  
-    //}
-    
-    /*public static void main(String args[]){
-        int opcao = 0;
+    public static void main(String args[]){
+        boolean saida = false;
+        int opcoes = 0;
+        int qtdAlunos = 0;
+        
+        //Criacao de objetos
+        EntradaConsole entMenu = new EntradaConsole();
         Scanner sc = new Scanner(System.in);
         Cadastro cadAluno = new Cadastro(5);
         
-        while(opcao > 4){
-            System.out.println("Forneça a Opçao");
-            System.out.println("1 - Inserir novo aluno");
-            System.out.println("2 - Remover alunos");
-            System.out.println("3 - Imprimir aluno");
-            System.out.println("4- Sair");
-            opcao = sc.nextInt();
-        }
-    }
-    
-    public static void menu(int op,Cadastro cadAluno){
-        int i = 0 ;
-        IEntrada ent = new EntradaConsole();
-        Aluno a1 = null;
-          
-            switch(op){
-                case 1 :
-                    a1 = cadAluno.colocar(a1);
-                    cadAluno.inserirAluno(a1); 
+        while(!saida){
+            
+            opcoes = entMenu.lerOp(); // Opcoes do menu
+            
+            switch(opcoes){
+                case 1: // Criar alunos
+                    if(qtdAlunos < 5){
+                        IEntrada ent = new EntradaConsole();
+                        Aluno a1 = null;
+        
+                        a1 = cadAluno.colocar(a1); // Cria o conteúdo de Aluno e aloca na variável a1
+                        cadAluno.inserirAluno(a1); // Preenche os conteúdos de Aluno
+                    } else if(qtdAlunos >= 5){
+                        entMenu.alunosDemais();
+                    }
+                    break;
+                
+                case 2: // Imprimir alunos
+                    cadAluno.mostrarAlunos();
                     break;
                     
-                 case 2 :
+                case 3: // Remover alunos
                     cadAluno.removerAlunos();
                     break;
                     
-                 case 3 :
-                   cadAluno.mostrarAluno();
+                case 4: // Fechar o programa
+                    saida = true;
                     break;
-                    
-                 case 4 :
-                        System.exit(0);
-            }            
-    }    */
-    
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        Cadastro cadAluno = new Cadastro(5);
-        for(int i = 0; i < 5; i++){
-        IEntrada ent = new EntradaConsole();
-        Aluno a1 = null;
-        
-        a1 = cadAluno.colocar(a1);
-        cadAluno.inserirAluno(a1);
+            }
         }
-        mostrarAluno();
     }
     
-    //public static void aplicacao(Cadastro cadAluno){
-    //    
-    //}
     
     
 }
