@@ -6,55 +6,86 @@
  *
  */
 public class Aluno extends Pessoa {
-	private String ra;
-	private int semestre;
-	
-	public Aluno (){
-		super();
-	}
-	public Aluno(String nome, int idade, String rg, String ra, int semestre) {
-		super(nome, idade, rg);
-		setRa(ra);
-		setSemestre(semestre);
-	}
+    private String ra;
+    private int semestre;
+    public Disciplina nomeDisciplina;
+    public Disciplina siglaDisciplina;
+    public Disciplina nota;
+    
+    
+    public Aluno (){
+        super();
+    }
+    public Aluno(String nome, int idade, String rg, String ra, int semestre,String nomeDisciplina, String siglaDisciplina, double nota) {
+        super(nome, idade, rg);
+        setRa(ra);
+        setSemestre(semestre);
+        setNomeDisciplina(nomeDisciplina);
+        setSiglaDisclina(siglaDisciplina);
+        setNota(nota);
+    }
 
-	/**
-	 * @return the ra
-	 */
-	public String getRa() {
-		return this.ra;
-	}
+    /**
+     * @return the ra
+     */
+    public String getRa() {
+        return this.ra;
+    }
 
-	/**
-	 * @param _prontuario the ra to set
-	 */
-	public void setRa(String ra) {
-		this.ra = ra;
-	}
+    /**
+     * @param _prontuario the ra to set
+     */
+    public void setRa(String ra) {
+        this.ra = ra;
+    }
 
-	/**
-	 * @return the semestre
-	 */
-	public int getSemestre() {
-		return semestre;
-	}
+    /**
+     * @return the semestre
+     */
+    public int getSemestre() {
+        return semestre;
+    }
 
-	/**
-	 * @param _serie the _semestre to set
-	 */
-	public void setSemestre(int semestre) {
-		this.semestre = semestre;
-	}
-	/* Imprime dados do aluno
-	 * 
-	 */
-	protected void imprimir(){
-		super.imprimir();
-		System.out.println("RA: " + getRa());
-		System.out.println("Semestre: " + getSemestre());
-		System.out.println("=====");
-	}
-	public String toString(){
-		return(super.toString() + "\nRA: " + getRa() + ",   Serie: " + getSemestre());
-	}
+    /**
+     * @param _serie the _semestre to set
+     */
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
+    }
+    
+    public String getNomeDisciplina(){
+        return nomeDisciplina.getNomeDisciplina();
+    }   
+    
+    protected void setNomeDisciplina(String nomeDisciplina) {
+        this.nomeDisciplina.setNomeDisciplina(nomeDisciplina);
+    }
+    
+    public String getSiglaDisciplina(){
+        return siglaDisciplina.setSiglaDisciplina(siglaDisciplina);
+    }    
+    
+    protected void setSiglaDisciplina(String siglaDisciplina){
+        this.siglaDisciplina = new Disciplina(siglaDisciplina);
+    }    
+    
+    public double getNota(){
+        return Disciplina.setNota(nota);
+    }    
+    
+    protected void setNota(double nota){
+        this.nota = new Disciplina.nota(nota);
+    }    
+    /* Imprime dados do aluno
+     * 
+     */
+    protected void imprimir(){
+        super.imprimir();
+        System.out.println("RA: " + getRa());
+        System.out.println("Semestre: " + getSemestre());
+        System.out.println("=====");
+    }
+    public String toString(){
+        return(super.toString() + "\nRA: " + getRa() + ",   Serie: " + getSemestre());
+    }
 }
