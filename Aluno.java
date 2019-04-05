@@ -8,21 +8,17 @@
 public class Aluno extends Pessoa {
     private String ra;
     private int semestre;
-    public Disciplina nomeDisciplina;
-    public Disciplina siglaDisciplina;
-    public Disciplina nota;
+    public Disciplina disciplinas[];
     
     
     public Aluno (){
         super();
     }
-    public Aluno(String nome, int idade, String rg, String ra, int semestre,String nomeDisciplina, String siglaDisciplina, double nota) {
+    public Aluno(String nome, int idade, String rg, String ra, int semestre, Disciplina disciplinas[]) {
         super(nome, idade, rg);
         setRa(ra);
         setSemestre(semestre);
-        setNomeDisciplina(nomeDisciplina);
-        setSiglaDisclina(siglaDisciplina);
-        setNota(nota);
+        setDisciplinas(disciplinas);
     }
 
     /**
@@ -53,29 +49,13 @@ public class Aluno extends Pessoa {
         this.semestre = semestre;
     }
     
-    public String getNomeDisciplina(){
-        return nomeDisciplina.getNomeDisciplina();
-    }   
     
-    protected void setNomeDisciplina(String nomeDisciplina) {
-        this.nomeDisciplina.setNomeDisciplina(nomeDisciplina);
+    
+    public void setDisciplinas(Disciplina disciplinas[]){
+        this.disciplinas = disciplinas;
     }
     
-    public String getSiglaDisciplina(){
-        return siglaDisciplina.setSiglaDisciplina(siglaDisciplina);
-    }    
     
-    protected void setSiglaDisciplina(String siglaDisciplina){
-        this.siglaDisciplina = new Disciplina(siglaDisciplina);
-    }    
-    
-    public double getNota(){
-        return Disciplina.setNota(nota);
-    }    
-    
-    protected void setNota(double nota){
-        this.nota = new Disciplina.nota(nota);
-    }    
     /* Imprime dados do aluno
      * 
      */

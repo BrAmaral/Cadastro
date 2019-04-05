@@ -40,7 +40,7 @@
             cad[i] = null;
         }
     }
-   
+    
     public void mostrarAlunos(){
         int i = 0;
         
@@ -51,6 +51,7 @@
     
     public Aluno colocar(Aluno a){
         IEntrada ent = new EntradaConsole();
+        int i = 0;
         
         String nome = ent.lerNome();
         String ra = ent.lerRa();
@@ -58,7 +59,17 @@
         int idade = ent.lerIdade();
         int semestre = ent.lerSemestre();
         
-        a = new Aluno(nome, idade, rg, ra, semestre);
+        Disciplina disciplinas[] = new Disciplina[3];
+        
+        for(i = 0; i < 3; i++){
+            String nomeDisciplina = ent.lerDisciplina();
+            String siglaDisciplina = ent.lerSigla();
+            double nota = ent.lerNota();
+            disciplinas[i] = new Disciplina(nomeDisciplina, siglaDisciplina, nota);
+        }
+        
+        
+        a = new Aluno(nome, idade, rg, ra, semestre, disciplinas);
         return a;
         
     }    

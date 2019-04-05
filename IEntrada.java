@@ -12,6 +12,9 @@ public interface IEntrada {
     public String lerRg(); // retorna o parametro RG
     public String lerRa(); // retorna o parametro RA
     public int lerSemestre(); //retorna o parametro semestre
+    public String lerDisciplina(); //retorna o parametro disciplina
+    public String lerSigla(); //retorna o parametro sigla
+    public double lerNota(); //retorna o parametro nota
     public int lerOp();
     
 }

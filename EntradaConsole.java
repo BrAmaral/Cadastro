@@ -36,6 +36,21 @@ public class EntradaConsole implements IEntrada
         return scan.nextInt();
     }
     
+    public String lerDisciplina(){
+        System.out.print("Forneca a disciplina (sem espaco):");
+        return scan.next();
+    }    
+    
+    public String lerSigla(){
+        System.out.print("Forneca a sigla da disciplina:");
+        return scan.next();
+    } 
+    
+    public double lerNota(){
+        System.out.print("Forneca a nota:");
+        return scan.nextDouble();
+    } 
+    
     public int lerOp(){
         System.out.print("Opcao 1- Inserir\nOpcao 2- Mostrar lista\nOpcao 3- Remover alunos\nOpcao 4- Sair\n");
         System.out.print("\nForneca a opcao: ");
