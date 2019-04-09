@@ -11,10 +11,6 @@ public class Disciplina
     public String siglaDisciplina;
     public double nota;
     
-    public Disciplina(){
-        
-    }    
-    
     public Disciplina(String nomeDisciplina, String siglaDisciplina, double nota){
         this.nomeDisciplina = new NomeDisciplina(nomeDisciplina);
         this.siglaDisciplina = siglaDisciplina;

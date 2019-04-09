@@ -8,11 +8,7 @@
 
 public interface IArmazenador
 {
-    /**
-     * Exemplo de um cabeçalho de método - substitua este comentário pelo seu
-     * 
-     * @param  y    exemplo de um parâmetro de método
-     * @return        o resultado produzido pelo sampleMethod 
-     */
-    int sampleMethod(int y);
+    public boolean inserirAluno(Aluno a);
+    public boolean removerAluno(String ra);
+    public void imprimir();
 }

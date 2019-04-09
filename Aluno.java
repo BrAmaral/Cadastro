@@ -6,7 +6,7 @@
  *
  */
 public class Aluno extends Pessoa {
-    private String ra;
+    public String ra;
     private int semestre;
     public Disciplina disciplinas[];
     

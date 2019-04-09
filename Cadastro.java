@@ -7,21 +7,37 @@
  */
  public class Cadastro
  {
-    public Aluno cad[];
-    int tamanho;
+    private IArmazenador cad;
+     //public Aluno cad[];
+    //int tamanho;
     
+    Cadastro(){
+        cad = new VetDin();
+    }    
+    
+    public void inserirAluno(Aluno a){
+        cad.inserirAluno(a);
+    }    
+    public boolean removerAluno(String ra){
+        return (removerAluno(ra));
+    }    
+    
+    public void imprimir(){
+        cad.imprimir();
+    }    
+    /*
     Cadastro(int tam){ // Apenas "cria" os 5 alunos
        cad = new Aluno[tam]; //tam = 5
-       tamanho = tam; /* Para que o valor de tam possa ser usado
-       no resto dessa classe */ 
+       tamanho = tam; //Para que o valor de tam possa ser usado
+                        //no resto dessa classe  
        
        for(int i = 0; i < tam; i++){ 
            //Inicialização do cadastro com valor nulo
            cad[i] = null;
        }
     }
-    
-    
+    */
+    /*
     public void inserirAluno(Aluno a){
        int i;
        
@@ -72,9 +88,6 @@
         a = new Aluno(nome, idade, rg, ra, semestre, disciplinas);
         return a;
         
-    }    
-    
-    
-    
+    } */
      
 }
