@@ -8,6 +8,7 @@
 
 public interface IArmazenador
 {
+    //interface das funções armazenadas em VetDin
     public boolean inserirAluno(Aluno a);
     public boolean removerAluno(String ra);
     public void imprimir();

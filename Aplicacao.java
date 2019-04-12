@@ -39,9 +39,10 @@ public class Aplicacao
                 case 1: // Criar alunos
                     if(qtdAlunos < 5){
                         IEntrada ent = new EntradaConsole();
-                        //Aluno a1 = null;
         
-                        a1 = new Aluno("Ana", 19, "P15", "RA017", 2, disci); // Cria o conteúdo de Aluno e aloca na variável a1
+                        a1 = new Aluno("Ana", 19, "P15", "RA017", 2, disci); // Cria o conteúdo de Aluno e aloca na variável a
+                        
+                        a1 = colocar(a1);
                         cadAluno.inserirAluno(a1); // Preenche os conteúdos de Aluno
                     } else if(qtdAlunos >= 5){
                         entMenu.alunosDemais();
@@ -56,8 +57,8 @@ public class Aplicacao
                     
                 case 3: // Remover alunos
                     try{
-                    //cadAluno.removerAlunos();
-                    cadAluno.removerAluno(a1.ra);
+                        //cadAluno.removerAlunos();
+                        cadAluno.removerAluno(a1.ra);
                     }catch(Exception e){
                         break;
                     }
@@ -70,6 +71,29 @@ public class Aplicacao
         }
     }
     
-    
+    public static Aluno colocar(Aluno a){
+        IEntrada ent = new EntradaConsole();
+        int i = 0;
+        
+        String nome = ent.lerNome();
+        String ra = ent.lerRa();
+        String rg = ent.lerRg();
+        int idade = ent.lerIdade();
+        int semestre = ent.lerSemestre();
+        
+        Disciplina disciplinas[] = new Disciplina[3];
+        
+        for(i = 0; i < 3; i++){
+            String nomeDisciplina = ent.lerDisciplina();
+            String siglaDisciplina = ent.lerSigla();
+            double nota = ent.lerNota();
+            disciplinas[i] = new Disciplina(nomeDisciplina, siglaDisciplina, nota);
+        }
+        
+        
+        a = new Aluno(nome, idade, rg, ra, semestre, disciplinas);
+        return a;
+        
+    } 
     
 }
