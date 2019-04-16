@@ -1,3 +1,4 @@
+import Elementos.Aluno;
 
 /**
  * A classe Cadastro utiliza os dados de Aluno para armazena-los em cadastro

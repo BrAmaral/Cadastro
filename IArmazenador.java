@@ -1,4 +1,4 @@
-
+import Elementos.Aluno;
 /**
  * Armazena as informacoes dos alunos registrados e mCadastro
  * 
