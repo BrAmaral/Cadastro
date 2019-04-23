@@ -1,6 +1,6 @@
 import Entradas.EntradaConsole;
 import Entradas.IEntrada;
-import Elementos.Aluno;
+//import Elementos.Aluno;
 import Elementos.Disciplina;
 
 import java.util.Scanner;

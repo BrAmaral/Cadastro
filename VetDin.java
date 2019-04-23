@@ -1,13 +1,13 @@
-import Elementos.Aluno;
+//import Elementos.Aluno;
 /**
  * Escreva a descrição da classe VetDin aqui.
  * 
  * Autores: Breno Amaral, Gabrielle Ramos, Victor Bulhões
  * 21.03.2019
  */
-public class VetDin implements IArmazenador
+public class VetDin implements IArmazenador 
 {
-    Aluno vet[];
+    Object vet[];
     int quanti;
     
     VetDin(){
@@ -15,7 +15,7 @@ public class VetDin implements IArmazenador
         setQuanti(0);
     }  
     
-    public Aluno[] getVet(){
+    public Object[] getVet(){
         return vet;
     }    
     
@@ -23,7 +23,7 @@ public class VetDin implements IArmazenador
         return quanti;
     }    
     
-    public void setVet(Aluno[] vet){
+    public void setVet(Object[] vet){
         this.vet = vet;
     }   
     
@@ -31,16 +31,16 @@ public class VetDin implements IArmazenador
         this.quanti = quanti;
     } 
     
-    public boolean inserirAluno(Aluno obj){
+    public boolean inserirAluno(Object obj){
         try{
             if (vet == null){
-                setVet(new Aluno[1]);
+                setVet(new Object[1]);
                 vet[0] = obj;
                 setQuanti(getQuanti()+1);
                 return true;
             }    
             else{
-                Aluno aux[] = new Aluno[vet.length+1];
+                Object aux[] = new Object[vet.length+1];
                 copiar(vet, aux);
                 aux[aux.length-1] = obj;
                 setVet(aux);
@@ -52,8 +52,8 @@ public class VetDin implements IArmazenador
         }    
     }  
     
-    Aluno removerAluno (){
-        Aluno ret = null;
+    Object removerAluno (){
+        Object ret = null;
         if(vet != null){
             ret = vet[vet.length-1];
             vet[vet.length-1] = null;
@@ -61,7 +61,7 @@ public class VetDin implements IArmazenador
 
         // atualiza vetor
         // cria vetor auxiliar
-        Aluno aux[] = new Aluno[vet.length-1];
+        Object aux[] = new Object[vet.length-1];
 
         // copia todos elementos de vet para aux
         copiar(vet, aux);
@@ -71,7 +71,7 @@ public class VetDin implements IArmazenador
         return ret;
     }
 
-    Aluno buscar (int i){
+    Object buscar (int i){
         return vet[i];
     }
 
@@ -79,7 +79,7 @@ public class VetDin implements IArmazenador
         return (quanti==0);
     }
 
-    private void copiar(Aluno origem[], Aluno destino[]){
+    private void copiar(Object origem[], Object destino[]){
         // copia todos
         int i;
         for (i = 0; i < vet.length; i++){
@@ -94,7 +94,10 @@ public class VetDin implements IArmazenador
         boolean ret = false;
         
         for (i = 0; i < vet.length; i++){
-            if (vet[i].getRa().equals(ra)) {
+            Aluno a = (Aluno) vet[i];
+            if (a.getRa().equals(ra))
+            {
+                
                 vet[i] = null;
                 ret = true;
                 break;

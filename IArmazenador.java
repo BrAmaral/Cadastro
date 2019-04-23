@@ -1,4 +1,4 @@
-import Elementos.Aluno;
+//import Elementos.Aluno;
 /**
  * Armazena as informacoes dos alunos registrados e mCadastro
  * 
@@ -9,7 +9,7 @@ import Elementos.Aluno;
 public interface IArmazenador
 {
     //interface das funções armazenadas em VetDin
-    public boolean inserirAluno(Aluno a);
+    public boolean inserirAluno(Object a);
     public boolean removerAluno(String ra);
     public void imprimir();
 }

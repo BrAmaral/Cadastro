@@ -2,7 +2,7 @@
 comment0.target=IArmazenador
 comment0.text=\r\n\ Armazena\ as\ informacoes\ dos\ alunos\ registrados\ e\ mCadastro\r\n\ \r\n\ @\ Breno\ Amaral,\ Gabrielle\ Silva\ &\ Victor\ Bulh\u00F5es\r\n\ 02.03.2019\r\n
 comment1.params=a
-comment1.target=boolean\ inserirAluno(Elementos.Aluno)
+comment1.target=boolean\ inserirAluno(java.lang.Object)
 comment2.params=ra
 comment2.target=boolean\ removerAluno(java.lang.String)
 comment3.params=

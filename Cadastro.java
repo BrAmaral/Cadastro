@@ -1,4 +1,4 @@
-import Elementos.Aluno;
+//import Elementos.Aluno;
 
 /**
  * A classe Cadastro utiliza os dados de Aluno para armazena-los em cadastro
@@ -8,23 +8,24 @@ import Elementos.Aluno;
  */
  public class Cadastro
  {
-    private IArmazenador cad;
+    private IArmazenador armazem;
      //public Aluno cad[];
     //int tamanho;
     
     Cadastro(){
-        cad = new VetDin();
+        this.armazem = new VetDin();
     }    
     
-    public void inserirAluno(Aluno a){
-        cad.inserirAluno(a);
+    public void inserirAluno(Object a){
+        this.armazem.inserirAluno(a);
     }    
+    
     public boolean removerAluno(String ra){
         return (removerAluno(ra));
     }    
     
     public void imprimir(){
-        cad.imprimir();
+        this.armazem.imprimir();
     }    
     /*
     Cadastro(int tam){ // Apenas "cria" os 5 alunos
