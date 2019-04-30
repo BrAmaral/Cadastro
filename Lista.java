@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class Lista //implements IArmazenador
 {
-    private ArrayList arrayL;
+    private ArrayList<Object> arrayL = new ArrayList<Object>();
     private int qtdd;
     
     public Lista(){
@@ -30,4 +30,31 @@ public class Lista //implements IArmazenador
     public void setQtdd(int qtdd){
         this.qtdd = qtdd;
     } 
+    
+    public void adicionar(Object x){
+        arrayL.add(x);
+        setQtdd(getQtdd()+1);
+    }
+    
+    public void remover(Object x){
+        arrayL.remove(x);
+        setQtdd(getQtdd()-1);
+    }
+    
+    public int tamanho(Object x){
+        return arrayL.size();
+    }
+    
+    public Object buscar(int x){
+        return arrayL.get(x);
+    }
+    
+    public boolean vazia(){
+        return (qtdd == 0);
+    }
+    
+    public void imprimir(){
+        System.out.println(arrayL);
+    }
+    
 }

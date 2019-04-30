@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=IArmazenador
-comment0.text=\r\n\ Armazena\ as\ informacoes\ dos\ alunos\ registrados\ e\ mCadastro\r\n\ \r\n\ @\ Breno\ Amaral,\ Gabrielle\ Silva\ &\ Victor\ Bulh\u00F5es\r\n\ 02.03.2019\r\n
+comment0.text=\n\ Armazena\ as\ informacoes\ dos\ alunos\ registrados\ e\ mCadastro\n\ \n\ @\ Breno\ Amaral,\ Gabrielle\ Silva\ &\ Victor\ Bulh\u00F5es\n\ 02.03.2019\n
 comment1.params=a
 comment1.target=boolean\ inserirAluno(java.lang.Object)
 comment2.params=ra
