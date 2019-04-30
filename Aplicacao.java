@@ -4,6 +4,7 @@ import Entradas.IEntrada;
 import Elementos.Disciplina;
 
 import java.util.Scanner;
+import javax.swing.JFrame;
 /**
  * Classe Aplicação guarda os dados de entrada em variaveis
  * 

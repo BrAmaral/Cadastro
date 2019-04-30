@@ -23,7 +23,7 @@ public class Disciplinas
         
         if(indice>=0)
         {
-            this.armazem.removerAluno(indice);
+            this.armazem.removerAluno(sigla);
             ret = true;
         }   
         return ret;
@@ -38,7 +38,7 @@ public class Disciplinas
         if (vet != null){
             for(i=0; i < vet.length; i++){
                 Disciplina a = (Disciplina) vet[i];
-                if (a.getSigla().equals(sigla)){
+                if (a.getSiglaDisciplina().equals(sigla)){
                     indice = i;
                     break;
                 }    
