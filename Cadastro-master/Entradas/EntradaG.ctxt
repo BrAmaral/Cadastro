@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=EntradaG
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ EntradaG\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=titulo
+comment1.target=EntradaG(java.lang.String)
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+numComments=3
