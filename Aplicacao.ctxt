@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Aplicacao
-comment0.text=\r\n\ Classe\ Aplica\u00E7\u00E3o\ guarda\ os\ dados\ de\ entrada\ em\ variaveis\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\r\n\ 21.03.2019\r\n
+comment0.text=\n\ Classe\ Aplica\u00E7\u00E3o\ guarda\ os\ dados\ de\ entrada\ em\ variaveis\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\n\ 21.03.2019\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=a
