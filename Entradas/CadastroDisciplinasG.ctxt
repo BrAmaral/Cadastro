@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=CadastroDisciplinasG
+comment0.text=\r\n\ Cadastro\ das\ disciplinas\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=titulo
+comment1.target=CadastroDisciplinasG(java.lang.String)
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=nomeAluno
+comment4.target=void\ setNome(java.lang.String)
+comment5.params=
+comment5.target=double\ getNota()
+comment6.params=notaDisciplina
+comment6.target=void\ setNota(double)
+comment7.params=
+comment7.target=java.lang.String\ getSigla()
+comment8.params=siglaDisciplina
+comment8.target=void\ setSigla(java.lang.String)
+comment9.params=
+comment9.target=void\ CloseFrame()
+numComments=10

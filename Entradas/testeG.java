@@ -2,7 +2,7 @@ package Entradas;
 import javax.swing.JFrame;
 
 /**
- * Escreva a descrição da classe testeG aqui.
+ * Usar para testar as classes
  * 
  * @author (seu nome) 
  * @version (número de versão ou data)
@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 public class testeG
 {
     public static void main(String[] args) {
-	EntradaG cv = new EntradaG("Cadatro de Alunos");
+	RemoverG cv = new RemoverG("Cadatro de Alunos");
 	cv.setVisible(true);
 	cv.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
