@@ -26,7 +26,8 @@ public class CadastroG extends JFrame implements ActionListener
     private JTextField ra;
     private JButton cadastro;
     private JButton sair;
-    //private JTextField tc;
+    
+    CadastroDisciplinasG dis = new CadastroDisciplinasG("Cadastro de Disciplina");
     
     public String nomeAluno;
     public int idadeAluno;
@@ -98,6 +99,11 @@ public class CadastroG extends JFrame implements ActionListener
         }catch(Exception e){
             res.setText("Valor invalido!");
         }    
+        
+        if("Cadastrar".equals(ae.getActionCommand())){
+            dis.setVisible(true);
+            dis.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
     }
     
     
