@@ -1,4 +1,5 @@
 //import Elementos.Aluno;
+import Alunos.Aluno;
 /**
  * Escreva a descrição da classe VetDin aqui.
  * 

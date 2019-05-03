@@ -1,5 +1,5 @@
 //import Elementos.Aluno;
-
+import Alunos.Aluno;
 /**
  * A classe Cadastro utiliza os dados de Aluno para armazena-los em cadastro
  * 
