@@ -4,5 +4,5 @@ comment0.text=\r\n\ Classe\ Aplica\u00E7\u00E3o\ guarda\ os\ dados\ de\ entrada\
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=a
-comment2.target=Aluno\ colocar(Aluno)
+comment2.target=Alunos.Aluno\ colocar(Alunos.Aluno)
 numComments=3
