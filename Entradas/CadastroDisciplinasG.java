@@ -41,7 +41,7 @@ public class CadastroDisciplinasG extends JFrame implements ActionListener
         setNota(notaDisciplina);
         
         Container cp = getContentPane();
-        cp.setLayout(new GridLayout(5,2));
+        cp.setLayout(new GridLayout(4,2));
         
         
         cp.add(new JLabel("Nome", JLabel.LEFT));
