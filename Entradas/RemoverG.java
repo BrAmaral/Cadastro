@@ -12,59 +12,46 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 /**
- * Entrada inicial da GUI
+ * Cadastro das disciplinas
  * 
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
-public class EntradaG extends JFrame implements ActionListener
+public class RemoverG extends JFrame implements ActionListener
 {
     private JLabel res;
-    private JButton inserir;
-    private JButton mostrar;
+    private JTextField ra;
     private JButton remover;
     private JButton sair;
     //private JTextField tc;
     
-    /*private JTextField nome;
-    private JTextField idade;
-    private JTextField rg;
-    private JTextField ra;
-    private JButton cadastro;
-    private JButton sair;
-    private JTextField tc;*/
-    
-    public String nomeAluno;
-    public int idadeAluno;
-    public String rgAluno;
-    public String raAluno;
+    public String RA;
     
     
-    EntradaG (String titulo){
+    RemoverG (String titulo){
         super(titulo);
-        setSize(450,200);
+        setSize(270,100);
         setLocation(900,300);
+        setRa(RA);
         
         Container cp = getContentPane();
-        cp.setLayout(new GridLayout(5,3));
+        cp.setLayout(new GridLayout(2,2));
         
-        // Versão Gabiii
         
-        cp.add(inserir = new JButton("Inserir"));
-        inserir.addActionListener(this);
-        inserir.setToolTipText("Insere aluno no Cadastro"); 
-        
-        cp.add(mostrar = new JButton("Mostrar"));
-        mostrar.addActionListener(this);
-        mostrar.setToolTipText("Mostra os alunos do Cadastro");
+        cp.add(new JLabel("RA", JLabel.CENTER));
+        ra = new JTextField();
+        ra.addActionListener(this);
+        ra.setToolTipText("RA do Aluno");
+        ra.setBackground(Color.WHITE);
+        cp.add(ra);
         
         cp.add(remover = new JButton("Remover"));
         remover.addActionListener(this);
-        remover.setToolTipText("Remove aluno no Cadastro");
+        remover.setToolTipText("Remover o Aluno pelo RA");
         
         cp.add(sair = new JButton("Sair"));
         sair.addActionListener(this);
-        sair.setToolTipText("Sai do Cadastro");
+        sair.setToolTipText("Sai da Remocao");
 
     }  
     
@@ -78,9 +65,19 @@ public class EntradaG extends JFrame implements ActionListener
             //double t = (9./5.)*Double.parseDouble(tc.getText())+32.;
             //res.setText(t+" F");
         }catch(Exception e){
-            //res.setText("Valor invalido!");
+            res.setText("Valor invalido!");
         }    
     }
     
+    public String getRa(){
+        return this.RA;
+    }
     
+    protected void setRa(String RA){
+        this.RA = RA;
+    }
+    
+    public void CloseFrame(){
+        super.dispose();
+    }
 }

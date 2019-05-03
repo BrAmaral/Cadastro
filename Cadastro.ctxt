@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Cadastro
-comment0.text=\n\ A\ classe\ Cadastro\ utiliza\ os\ dados\ de\ Aluno\ para\ armazena-los\ em\ cadastro\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\n\ 22.03.2019\n
+comment0.text=\r\n\ A\ classe\ Cadastro\ utiliza\ os\ dados\ de\ Aluno\ para\ armazena-los\ em\ cadastro\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos,\ Victor\ Bulhoes\r\n\ 22.03.2019\r\n
 comment1.params=
 comment1.target=Cadastro()
 comment2.params=a

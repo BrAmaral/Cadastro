@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=CadastroG
+comment0.text=\r\n\ Cadastro\ do\ aluno\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=titulo
+comment1.target=CadastroG(java.lang.String)
+comment10.params=raAluno
+comment10.target=void\ setRa(java.lang.String)
+comment11.params=
+comment11.target=void\ CloseFrame()
+comment2.params=ae
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=java.lang.String\ getNome()
+comment4.params=nomeAluno
+comment4.target=void\ setNome(java.lang.String)
+comment5.params=
+comment5.target=int\ getIdade()
+comment6.params=idadeAluno
+comment6.target=void\ setIdade(int)
+comment7.params=
+comment7.target=java.lang.String\ getRg()
+comment8.params=rgAluno
+comment8.target=void\ setRg(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ getRa()
+numComments=12

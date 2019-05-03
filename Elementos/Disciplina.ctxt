@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Disciplina
-comment0.text=\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ Disciplina\ aqui.\n\ \n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos\ e\ Victor\ Bulh\u00F5es\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\n
+comment0.text=\r\n\ Escreva\ a\ descri\u00E7\u00E3o\ da\ classe\ Disciplina\ aqui.\r\n\ \r\n\ Autores\:\ Breno\ Amaral,\ Gabrielle\ Ramos\ e\ Victor\ Bulh\u00F5es\r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
 comment1.params=nomeDisciplina\ siglaDisciplina\ nota
 comment1.target=Disciplina(java.lang.String,\ java.lang.String,\ double)
 comment2.params=
