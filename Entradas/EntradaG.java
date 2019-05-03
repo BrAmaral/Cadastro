@@ -24,15 +24,9 @@ public class EntradaG extends JFrame implements ActionListener
     private JButton mostrar;
     private JButton remover;
     private JButton sair;
-    //private JTextField tc;
     
-    /*private JTextField nome;
-    private JTextField idade;
-    private JTextField rg;
-    private JTextField ra;
-    private JButton cadastro;
-    private JButton sair;
-    private JTextField tc;*/
+    CadastroG cad = new CadastroG("Cadastro do Aluno");
+    RemoverG rem = new RemoverG("Remocao de Aluno");
     
     public String nomeAluno;
     public int idadeAluno;
@@ -42,11 +36,13 @@ public class EntradaG extends JFrame implements ActionListener
     
     EntradaG (String titulo){
         super(titulo);
-        setSize(450,200);
+        setSize(350,200);
         setLocation(900,300);
         
+        
+        
         Container cp = getContentPane();
-        cp.setLayout(new GridLayout(5,3));
+        cp.setLayout(new GridLayout(4,1));
         
         // Versão Gabiii
         
@@ -80,6 +76,16 @@ public class EntradaG extends JFrame implements ActionListener
         }catch(Exception e){
             //res.setText("Valor invalido!");
         }    
+        
+        if("Inserir".equals(ae.getActionCommand())){
+            cad.setVisible(true);
+            cad.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
+        
+        if("Remover".equals(ae.getActionCommand())){
+            rem.setVisible(true);
+            rem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
     }
     
     
